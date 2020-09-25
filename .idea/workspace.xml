@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8902da9-e5f8-4d95-b057-f69e23884e30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/HWS2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HWS2/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HWS2/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HWS2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HWS2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HWS2/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HWS2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HWS2/HWS(2).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HWS2/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1i1ERo124ITrP15f8rHidZbHjdM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="JavaWorkshop" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8902da9-e5f8-4d95-b057-f69e23884e30" name="Default Changelist" comment="" />
+      <created>1601066691452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601066691452</updated>
+      <workItem from="1601066694799" duration="164000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="22" y="112" key="new project wizard" timestamp="1601066857339">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="22" y="112" key="new project wizard/0.0.1280.984@0.0.1280.984" timestamp="1601066857339" />
+  </component>
+</project>
