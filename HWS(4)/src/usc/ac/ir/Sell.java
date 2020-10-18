@@ -54,7 +54,7 @@ public class Sell {
             setCardNumber(scanner.nextLine());
             System.out.println("Enter Your Card Password(Card Password MaxiMum Is 8 And Minimum Is 6):");
             setCardPassword(scanner.nextLine());
-            System.out.println("Enter Your Second Password(A Second Password With 4 Numbers Is Incorrect):");
+            System.out.println("Enter Your Second Password(A Second Password With 4 Numbers Is correct):");
             setCardSecondPassword(scanner.nextLine());
             try {
                 sellExceptions.exceptions(getCardNumber(),getCardPassword(),getCardSecondPassword());
