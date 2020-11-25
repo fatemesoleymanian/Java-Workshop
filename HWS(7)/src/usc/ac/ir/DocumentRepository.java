@@ -112,6 +112,8 @@ public class DocumentRepository implements AutoCloseable{
 
     @Override
     public void close() throws Exception {
+        preparedStatement.close ();
+        connection.close ();
 
     }
 }
