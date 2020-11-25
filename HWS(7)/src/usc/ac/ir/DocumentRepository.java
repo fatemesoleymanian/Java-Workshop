@@ -63,21 +63,28 @@ public class DocumentRepository implements AutoCloseable{
         }preparedStatement.executeUpdate();
 
     }
-    public List<DocumentRequirments> selectForPeople()throws Exception{
+    public List<DocumentRequirments> selectForPeople(String owner, int ID)throws Exception{
         preparedStatement=connection.prepareStatement("SELECT * from document where id=?");
         DocumentRequirments documentRequirments=new DocumentRequirments();
         preparedStatement.setInt(1, documentRequirments.getID());
         ResultSet resultSet=preparedStatement.executeQuery();
+
         List<DocumentRequirments> entityList=new ArrayList<>();
         while(resultSet.next()){
             DocumentRequirments entity=new DocumentRequirments();
+            if (owner==resultSet.getString("owner") && ID==resultSet.getInt("id")){
             entity.setOwnerName(resultSet.getString("owner"));
             entity.setDocType(resultSet.getString("type"));
             entity.setDocNum(resultSet.getString("num"));
             entity.setDocDate(resultSet.getString("datee"));
             entity.setID(resultSet.getInt("id"));
             entity.setDescriptions(resultSet.getString("descript"));
-        }
+                entityList.add(entity);
+
+
+        }else {
+                entityList.add(null);
+            } }
         return entityList;
     }
     public List<DocumentRequirments> selectForManager()throws Exception{
@@ -94,6 +101,7 @@ public class DocumentRepository implements AutoCloseable{
             entity.setDocDate(resultSet.getString("datee"));
             entity.setID(resultSet.getInt("id"));
             entity.setDescriptions(resultSet.getString("descript"));
+            entityList.add(entity);
         }
         return entityList;
     }

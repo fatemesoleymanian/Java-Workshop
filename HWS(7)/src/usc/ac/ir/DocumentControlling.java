@@ -44,7 +44,7 @@ public class DocumentControlling {
         String owner=scanner.next();
         System.out.println("document ID");
         int docID=scanner.nextInt();
-        if(docID==12345){
+        if(docID==12345 && owner.equals("hanieSoleymani")){
             System.out.println("you entered to system as manager");
             System.out.println("you can see tables info");
             try {
@@ -66,14 +66,19 @@ public class DocumentControlling {
         }else {
             try {
                 DocumentRepository userRepo=new DocumentRepository();
-                List<DocumentRequirments> userList = userRepo.selectForPeople();
-                for (DocumentRequirments userEntity : userList) {
-                    System.out.print("owner:\t"+userEntity.getOwnerName());
-                    System.out.print("type:\t"+userEntity.getDocType());
-                    System.out.print("date:\t"+userEntity.getDocDate());
-                    System.out.print("number:\t"+userEntity.getDocNum());
-                    System.out.print("ID:\t"+userEntity.getID());
-                    System.out.print("descriptions:\n"+userEntity.getDescriptions());
+                List<DocumentRequirments> userList = userRepo.selectForPeople(owner,docID);
+                if (userList!=null){
+                    for (DocumentRequirments userEntity : userList) {
+                        System.out.print("owner:\t"+userEntity.getOwnerName());
+                        System.out.print("type:\t"+userEntity.getDocType());
+                        System.out.print("date:\t"+userEntity.getDocDate());
+                        System.out.print("number:\t"+userEntity.getDocNum());
+                        System.out.print("ID:\t"+userEntity.getID());
+                        System.out.print("descriptions:\n"+userEntity.getDescriptions());
+
+                }}else{
+                    System.out.println("wrong input");
+
                 }
             }
             catch (Exception e){
