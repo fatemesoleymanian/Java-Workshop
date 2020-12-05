@@ -24,7 +24,7 @@ public class Main {
         }
         System.out.println("Choose a number for buying:");
         String num1=scanner.nextLine();
-        System.out.println("Now Enter Customer's name and the desired car type ID and the car name ID respectively to continue!");
+        System.out.println("Now Enter Customer's name and  the car name ID respectively to continue!");
         try {
             SellService.getInstance().saveCustomer(num1,new CarEntity().setCustomer(scanner.nextLine()).setCarID(num).setCarNameID(scanner.nextLine()));
         }catch (Exception e){
