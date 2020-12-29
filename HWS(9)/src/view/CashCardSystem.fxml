@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="555.0" prefWidth="600.0" style="-fx-background-color: #daa520;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cotroller.Welcome">
+   <children>
+      <Pane layoutX="42.0" layoutY="60.0" prefHeight="498.0" prefWidth="516.0" style="-fx-background-color: #000000; -fx-background-radius: 6.0;">
+         <children>
+            <Label layoutX="139.0" layoutY="3.0" text="Transfer From Origin  Card :" textFill="GOLDENROD">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="transfer" buttonType="RAISED" layoutX="213.0" layoutY="443.0" onAction="#transferBtn" text="Transfer " textAlignment="JUSTIFY" textFill="GOLDENROD" underline="true">
+               <font>
+                  <Font name="Californian FB Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="originCardTxt" focusColor="#4d4942" layoutX="41.0" layoutY="52.0" prefHeight="42.0" prefWidth="206.0" promptText="xxxx-xxxx-xxxx-xxxx" style="-fx-background-color: #FFFAF0;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="258.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/cashCard.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="CVV2Txt" alignment="CENTER" focusColor="#4d4942" layoutX="41.0" layoutY="188.0" prefHeight="42.0" prefWidth="206.0" promptText="CVV2" style="-fx-background-color: #FFFAF0;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="destinationCardTxt" focusColor="#4d4942" layoutX="236.0" layoutY="279.0" prefHeight="42.0" prefWidth="206.0" promptText="xxxx-xxxx-xxxx-xxxx" style="-fx-background-color: #FFFAF0;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="amountTxt" alignment="CENTER" focusColor="#4d4942" layoutX="236.0" layoutY="356.0" prefHeight="42.0" prefWidth="206.0" promptText="Amount" style="-fx-background-color: #FFFAF0;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="256.0" layoutY="249.0" text="To Destination Card :" textFill="GOLDENROD">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="453.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/cashCard.jpg" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="PInCardTxt" alignment="CENTER" focusColor="#4d4942" layoutX="41.0" layoutY="117.0" prefHeight="42.0" prefWidth="206.0" promptText="PIN" style="-fx-background-color: #FFFAF0;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>

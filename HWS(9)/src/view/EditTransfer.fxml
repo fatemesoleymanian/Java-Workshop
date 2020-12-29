@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="422.0" prefWidth="543.0" style="-fx-background-color: #daa520;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cotroller.Welcome">
+   <children>
+      <Pane layoutX="39.0" layoutY="42.0" prefHeight="380.0" prefWidth="465.0" style="-fx-background-color: #000000; -fx-background-radius: 6.0;">
+         <children>
+            <Label layoutX="77.0" layoutY="62.0" text="Origin  Card :" textFill="GOLDENROD">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="editBtn" buttonType="RAISED" layoutX="294.0" layoutY="344.0" onAction="#editBtn" text="Edit" textAlignment="JUSTIFY" textFill="GOLDENROD" underline="true">
+               <font>
+                  <Font name="Californian FB Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="originCardTExt" focusColor="#4d4942" layoutX="191.0" layoutY="52.0" prefHeight="42.0" prefWidth="206.0" promptText="xxxx-xxxx-xxxx-xxxx" style="-fx-background-color: #FFFAF0;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="421.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/cashCard.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="transactionCodeETxt" alignment="CENTER" focusColor="#4d4942" layoutX="191.0" layoutY="122.0" prefHeight="42.0" prefWidth="206.0" promptText="Transaction Code" style="-fx-background-color: #FFFAF0;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="destinationCardTExt" focusColor="#4d4942" layoutX="191.0" layoutY="199.0" prefHeight="42.0" prefWidth="206.0" promptText="xxxx-xxxx-xxxx-xxxx" style="-fx-background-color: #FFFAF0;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="replaceAmountTxt" alignment="CENTER" focusColor="#4d4942" layoutX="191.0" layoutY="275.0" prefHeight="42.0" prefWidth="206.0" promptText="Replace Amount" style="-fx-background-color: #FFFAF0;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="36.0" layoutY="209.0" text=" Destination Card :" textFill="GOLDENROD">
+               <font>
+                  <Font name="Californian FB Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="49.0" layoutX="421.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/cashCard.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </children>
+</AnchorPane>
